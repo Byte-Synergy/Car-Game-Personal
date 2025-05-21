@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car rasing || JS Practise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="road"></div>
+    <img src="images/car.png" alt="car" class="car">
+    <img src="images/tree1.png" alt="tree" class="tree tree1">
+    <img src="images/tree2.png" alt="tree" class="tree tree2">
+    <img src="images/tree3.png" alt="tree" class="tree tree3">
+    <img src="images/tree1.png" alt="tree" class="tree tree4">
+    <img src="images/tree2.png" alt="tree" class="tree tree5">
+    <img src="images/tree3.png" alt="tree" class="tree tree6">
+
+    <img src="images/arrow.png" alt="arrow" class="arrow">
+    <img src="images/danger.png" alt="danger" class="danger">
+    <img src="images/coin.png" alt="coin" class="coin">
+
+    <div class="game-score">0</div>
+
+    <div class="backdrop">
+        <div class="backdropContainer">
+            <p class="finishTitle">Your score is: <span class="finishScore">0</span> </p>
+            <button type="button" class="restartBtn"> Restart Game</button>
+        </div>
+    </div>
+
+    <button type="button" class="gameBtn">
+        <img src="images/pause.png" alt="pause button" class="pause">
+        <img src="images/play.png" alt="pause button" class="play">
+    </button>
+
+    <script src="./js/getCoords.js"></script>
+    <script src="./js/elInfo.js"></script>
+    <script src="./js/hasCollision.js"></script>
+    <script src="./js/carMoves.js"></script>
+    <script src="./js/treesAnimation.js"></script>
+    <script src="./js/elementsAnimation.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        const restartBtn = document.querySelector(".restartBtn");
+        restartBtn.addEventListener("click", () => {
+            window.location.reload();
+        });
+    </script>GamePractise
+</body>
+
+</html>
